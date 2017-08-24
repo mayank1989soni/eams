@@ -1,0 +1,98 @@
+/* 
+  -----------------------------------
+  PopMenu Magic Style Sheet
+  by Project Seven Development
+  www.projectseven.com
+  Menu Type: Vertical
+  Style Theme:0 -Basic Style
+  -----------------------------------
+*/
+#p7PMnav {
+	margin: 0;
+	padding:0;
+}
+#p7PMnav li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	line-height: 2;
+}
+#p7PMnav ul {
+	margin: 0;
+	padding: 0;
+	border: 1px solid #e8e1d5;
+	z-index: 10000;
+}
+
+#p7PMnav a {
+	display: block;
+	text-decoration: none;
+	background-color: #3B4354;
+	padding: 6px 10px;
+	color: #ffffff;
+	line-height: 1.5;
+	border-bottom-width: thin;
+	border-bottom-color: #e8e1d5;
+	border-bottom-style: solid;
+}
+#p7PMnav a:hover, #p7PMnav a:active, #p7PMnav a:focus {
+	background-color: #D8DCE3;
+	color: #3B4354;
+	letter-spacing: 0.01px;
+}
+
+/* ------ the current page marker style ------ */
+#p7PMnav .p7PMmark {
+	color: #fff;
+	font-weight: bold;
+}
+/* ------ the trigger link styles ------- */
+
+/*the normal trigger link */
+#p7PMnav .p7PMtrg, #p7PMnav .p7PMon {
+	background-image:  url(/common/images/p7PM_light_east.gif);
+	background-repeat:	no-repeat;
+	background-position: right center;
+}
+/* the active trigger link style */
+#p7PMnav .p7PMon {
+	background-color: #e1d9d1;
+	color: #685745;
+}
+
+/*the submenu classes */
+
+#p7PMnav .p7PMhide {
+	left: -9000px;
+	border: 0;
+}
+#p7PMnav .p7PMshow {
+	left: auto;
+	z-index: 20000 !important;
+}
+/* Top level menu width */
+#p7PMnav {
+	width: 135px;
+}
+/* 2nd and subsequent Submenu widths */
+#p7PMnav ul {
+	width: 135px;
+	color: #fff;
+}
+#pmmcrumb {
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+#pmmcrumb a, #pmmcrumb a:visited {
+	font-weight: normal;
+	color: #5A69A5;
+}
+#pmmcrumb a:hover, #pmmcrumb a:active, #pmmcrumb a:focus {
+	font-weight: normal;
+	color: #333333;
+}
+
+/* styles to make flyouts a different color */
+#p7PMnav ul a {
+	background-color: #3B4354;
+}

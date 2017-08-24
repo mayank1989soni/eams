@@ -1,0 +1,282 @@
+/* Page Layout & Global Styles */
+
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper {
+    display: block;
+}
+#banner  {
+    display: none;
+}
+#bannerPrint {
+}
+#sidebar {
+    display: none;
+}
+#menu {
+    display: none;
+}
+#maincontent {
+}
+#footer {
+    text-align: right;
+    padding-top: 48px;
+}
+
+
+/* Primary Text Styles */
+/* Margins, padding, etc., shorthand is: Top, Right, Bottom, Left */
+
+h1 {
+    font-size: 150%;
+    font-weight: bold;
+    color: #e23d28;
+    margin: 48px 0px 12px 0px;
+}
+h2 {
+    font-size: 130%;
+    font-weight: bold;
+    color: #685745;
+    margin: 32px 0px 12px 0px;
+}
+h3 {
+    font-size: 120%;
+    font-weight: bold;
+    font-style: italic;
+    color: #685745;
+    margin: 32px 0px 12px 0px;
+}
+h4 {
+    font-size: 120%;
+    font-weight: bold;
+    color: #685745;
+    margin: 24px 0px 12px 20px;
+}
+h5 {
+    font-size: 100%;
+    font-weight: bold;
+    color: #685745;
+    margin: 24px 0px 12px 20px;
+}
+h6 {
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: #685745;
+    margin: 24px 0px 12px 20px;
+}
+#maincontent p {
+    margin: 0px 30px 12px 30px;
+    line-height: 120%;
+    font-size: 100%;
+}
+#maincontent li {
+    line-height: 125%;
+    margin-left: 40px;
+}
+#footer p {
+    margin-right: 0;
+}
+
+
+/* Link Styles */
+
+#maincontent a:link {
+    color: #004054;
+    text-decoration: underline;
+}
+#maincontent a:visited {
+    color: #808080;
+    text-decoration: underline;
+}
+#appsDataList a:link {
+    text-decoration: none;
+}
+#appsDataList a:visited {
+    text-decoration: none;
+}
+#footer .footerLinks a:link {
+    color: #e23d28;
+    text-decoration: none;
+}
+#footer .footerLinks a:visited {
+    color: #e23d28;
+    text-decoration: none;
+}
+
+#footerNoLinkHiLite a:link,
+#footerNoLinkHiLite a:visited {
+    text-decoration: none;
+    border: none;
+}
+
+
+/* Image Styles (Margins shorthand: Top, Right, Bottom, Left) */
+.borderNone { border: none; }
+.borderOne { border: 1px solid #333333; }
+
+.SuccessText
+{
+    font-weight: bold;
+    font-size: 120%;
+    background-color: #E6F8DD;
+}
+
+/*
+***************************
+New real-time report format
+***************************
+*/
+
+#RealTimeResultsHTMLTableDiv,
+#RealTimeResultsHTMLTableDiv p,
+#RealTimeResultsHTMLTableDiv h1,
+#RealTimeResultsHTMLTableDiv h2 {
+    text-align: left;
+    color: #000;
+    }
+
+#RealTimeResultsHTMLTableDiv #report-header {
+    width: 630px;
+    }
+
+#RealTimeResultsHTMLTableDiv #report-header table,
+#RealTimeResultsHTMLTableDiv #report-results table {
+    margin: 0;
+    margin-left: 30px;
+    width: 600px;
+    }
+
+#RealTimeResultsHTMLTableDiv #report-header h1,
+#RealTimeResultsHTMLTableDiv #report-results h2 {
+    color: #685745;
+    margin: 0;
+    padding: 0;
+    }
+
+#RealTimeResultsHTMLTableDiv #report-header h1 {
+    margin-bottom: 10px;
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: bold;
+    }
+
+#RealTimeResultsHTMLTableDiv #report-header table tr td,
+#RealTimeResultsHTMLTableDiv #report-results table tr td {
+    font-size: 13px;
+    line-height: 15px;
+    vertical-align: top;
+    padding: 2px 4px;
+    }
+
+#RealTimeResultsHTMLTableDiv #report-header table tr td.report-col1,
+#RealTimeResultsHTMLTableDiv #report-results table tr td.report-col1 {
+    width: 250px;
+    font-weight: bold;
+    }
+
+#RealTimeResultsHTMLTableDiv #report-header table tr td.report-col2,
+#RealTimeResultsHTMLTableDiv #report-results table tr td.report-col2 {
+    width: 350px;
+    }
+
+#RealTimeResultsHTMLTableDiv #report-results {
+    margin-top: 4ex;
+    }
+
+#RealTimeResultsHTMLTableDiv #report-results table.report-section {
+    margin-top: 2.5ex;
+    }
+
+#RealTimeResultsHTMLTableDiv #report-results h2 {
+    width: 500px;
+    margin-bottom: 0px;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    }
+
+#RealTimeResultsHTMLTableDiv #report-results table tr td h3 {
+    color: #c75b12;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 17px;
+    font-style: normal;
+    margin: 0 0 2ex;
+    padding: 0;
+    }
+
+#RealTimeResultsHTMLTableDiv #report-footer {
+    margin: 3ex 0 0;
+    padding: 0;
+    }
+
+#RealTimeResultsHTMLTableDiv #report-footer p {
+    font-size: 9px;
+    line-height: 10px;
+    margin: 0;
+    }
+
+div#RealTimeResultsHTMLTableDiv {
+    float: none !important;
+    clear: both;
+    page-break-before: always;
+    }
+hr
+{
+    height: 2px;
+    width: auto;
+}
+
+/* Stuff we don't want to print */
+.ExcludeFromPrint {
+    display: none;
+}
+
+/*
+    Styles for the usage report table
+*/
+
+table#ReportDataGrid tr.AlternateRow {
+    background-color: #dcdcdc;  /* gainsboro */
+}
+
+table#ReportDataGrid td,
+table#ReportDataGrid th {
+    padding: 2px 4px;
+}
+
+table#ReportDataGrid th {
+    font-weight: bold;
+    color: #333;
+}
+
+table#ReportDataGrid td {
+    font-size: x-small;
+    color: #333;
+}
+
+table#ReportDataGrid td.HitsColumn {
+    text-align: right;
+}
+
+/*
+    New user license agreement
+*/
+div#licenseAgreementBox {
+    margin: 12px 30px;
+}
+div#licenseAgreementBox p {
+    font: 14px monospace;
+    margin: 0;
+    padding: 0 3px 12px;
+}
+div#licenseAgreementBox p.licenseSectionHdr {
+    padding-bottom: 0;
+}

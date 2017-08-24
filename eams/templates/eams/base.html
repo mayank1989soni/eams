@@ -1,0 +1,110 @@
+{% load staticfiles %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Embankment Assets Management System Uttar Pradesh for Rapti Basin">
+<meta name="keywords" content="geospatial, geo-spatial, spatial, geocoding, site location, site selection, data quality, insurance, rainfall data, GIS, geographic information systems, mapping, map, EAMS, FMISC">
+<title>EAMS Portal</title>
+ <link rel="shortcut icon" href="{% static 'images/favicon.png' %}"> 
+
+ <link href="{% static 'css/corelogic_styles.css' %}" rel="stylesheet" type="text/css">
+ <!-- <link href="css/corelogic_styles_print.css" rel="stylesheet" type="text/css"> -->
+ <link href="{% static 'css/p7pmv0.css' %}" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}">
+
+</head>
+
+<body onLoad="P7_initPM(0,0,1,-20,10);P7_equalCols2(0,'sidebar','P','maincontent','P');">
+<div id="wrapper">
+<div id="banner" style="background-image: url({% static 'images/newflood.jpg' %});"><a name="TopOfPage"></a><a href="/home"></a></div>
+<!--The bannerPrint only shows when printing -->
+<div id="bannerPrint"><img src="{% static 'images/corelogic_banner_print.gif' %}" alt="logo" width="150" height="100" border="0" class="borderNone"/></div>
+
+<div id="maincontent">
+ {% block content %}
+            if you see this, something is wrong!
+ {% endblock content %}
+ {% block image %}
+			
+ {% endblock image %}
+</div>
+<!-- End of maincontent -->
+<div id="sidebar">
+<div id="menu">
+<ul id="p7PMnav">
+<li><a href="../" class = "p7PMtrg">&raquo; Home</a>
+ <!--  <ul>
+    <li><a href="#" class = "p7PMtrg">CoreLogic</a>
+      <ul>
+        <li><a href="#">CoreLogic Spatial Solutions</a></li>
+      </ul>
+    </li>
+  </ul> -->
+</li>
+<li><a href="{% url 'about' %}">&raquo; About FMISC</a></li>
+<li><a href="{% url 'organisation' %}">&raquo; Organisational Structure</a></li>
+<li><a href="#" >&raquo; Links</a>
+  <ul>
+    <li><a href="http://fmiscup.in" class="p7PMtrg" target="_blank">FMISC Uttar Pradesh</a></li>
+    <li><a href="http://idup.gov.in/" class = "p7PMtrg" target="_blank">Department of Irrigation</a></li>
+    <li><a href="http://www.imd.gov.in" class = "p7PMtrg" target="_blank">India Meteorological Department</a></li>
+    <li><a href="http://india-wris.nrsc.gov.in/wris.html" class = "p7PMtrg" target="_blank">Water Resources Information System</a></li>
+    <li><a href="http://www.dhm.gov.np/" class = "p7PMtrg" target="_blank">Department of Hydrology & Meteorology(Nepal)</a></li>
+      
+        <li><a href="#" target="_blank">CoreLogic Spatial Solutions</a></li>
+      
+    </li>
+  </ul> 
+</li>
+<!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;float:left;clear:both;width:100%}</style><![endif]-->
+<!--[if IE 6]><style>#p7PMnav li{clear:none;}</style><![endif]-->
+</ul>
+</div><!-- End of menu -->
+<div id="loginHeader"><p class="loginHeading">Login</p></div>
+<div id="login">
+<br><a href="{% url 'login' %}" class="loginLabel">Login</a>
+<br><a href="{% url 'forgot' %}" class="loginLabel">Forgot Password?</a>
+   <br><a href="{% url 'register' %}" class="loginLabel">New User?</a>
+   </div>
+<!-- <div id="login">
+  <form name="loginForm" id="loginForm" method="post" action="{% url 'login' %}">
+  {% csrf_token %}
+    <label for="_ctl1:login_username_tb" class="loginLabel">Username</label>
+    <input name="_ctl1:login_username_tb" type="text" class="loginField" id="username" style="width:120px"/>
+    <label for="_ctl1:login_password_tb" class="loginLabel">Password</label>
+    <input name="_ctl1:login_password_tb" type="password" class="loginField" id="password" style="width:120px"/>
+    <input type="image" name="loginButton" class="loginButton" src="{% static 'images/loginbutton.png' %}" alt="" border="0"/>
+   <br><a href="{% url 'forgot' %}" class="loginLabel">Forgot Password?</a>
+   <br><a href="{% url 'register' %}" class="loginLabel">New User?</a>
+  </form>
+</div> --><!-- End login div -->
+<script type='text/javascript' LANGUAGE='JavaScript'>
+if( document.loginForm['_ctl1:login_username_tb'] != null )
+{ 
+  document.loginForm['_ctl1:login_username_tb'].focus();
+}
+</script>
+
+<p>&nbsp;</p>
+</div><!-- End of sidebar -->
+<div id="footer">
+<p class="footerLinks"><a href="#" title="Legal">Copyright &copy; 2017 - <a href="#" title="egis Website">egis</a> | <a href="#" title="Privacy Policy">Privacy</a></p>
+<!--The following &nbsp; paragraph required for equal columns script -->
+<p>&nbsp;</p>
+</div><!-- footer -->
+</div><!-- End of wrapper -->
+<script type="text/javascript" src="{% static 'js/p7_eqCols2_10.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/p7popmenu.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/corelogic_scripts.js' %}"></script>
+<!-- ================================================
+    Scripts
+    ================================================ -->
+  <!-- jQuery Library -->
+ <script type="text/javascript" src="{% static 'js/jquery1.11.2.js' %}"></script>
+ 
+  <!--materialize js-->
+  <script type="text/javascript" src="{% static 'js/materialize.js' %}"> </script>
+</body>
+</html>
